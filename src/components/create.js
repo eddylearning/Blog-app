@@ -27,7 +27,8 @@ const Create = () => {
       })
       .catch(err => {
         toast.error('An error occurred while adding the blog', {
-          position: toast.POSITION.TOP_RIGHT,
+          // position: toast.POSITION.TOP_RIGHT,
+          position:"top-right",
           autoClose: 3000,
         });
       });
@@ -43,6 +44,7 @@ const Create = () => {
             type="text"
             placeholder="Enter blog title"
             onChange={handleChange}
+            required
             value={formData.title}
           />
         </Form.Group>
@@ -54,6 +56,7 @@ const Create = () => {
             type="text"
             placeholder="Enter author name"
             onChange={handleChange}
+            required
             value={formData.author}
           />
         </Form.Group>

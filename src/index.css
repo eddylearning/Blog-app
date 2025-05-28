@@ -2,7 +2,9 @@
 *{
   margin: 0px;
   font-family: "Quicksand";
-  color: #333;
+   background-color: black; 
+   color: #f2f2f2; 
+  /* color: #333; */
 }
 
 .navbar {
