@@ -115,8 +115,16 @@ const Create = () => {
         toast.success('New blog added successfully', { position: "top-right", autoClose: 3000 });
         setFormData({ title: '', author: '', body: '' });
       })
-      .catch(() => {
-        toast.error('An error occurred while adding the blog', { position: "top-right", autoClose: 3000 });
+ //bloglist
+     // .catch(() => {
+       // toast.error('An error occurred while adding the blog', { position: "top-right", autoClose: 3000 });
+    
+      .catch(err => {
+        toast.error('An error occurred while adding the blog', {
+          position: "top-right",
+          autoClose: 3000,
+        });
+ main
       });
   };
 
